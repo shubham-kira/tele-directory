@@ -5,6 +5,10 @@
     <title>Leh Garrison</title>
 </head>
 <body>
+    {% for master_list_item in master_list_items %}
 
+        {{ master_list_item.rk }} {{ master_list_item.appt }} {{ master_list_item.name }} {{ master_list_item.unit }} {{ master_list_item.number }}
+        <br>
+    {% endfor %}
 </body>
 </html>
