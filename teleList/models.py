@@ -7,7 +7,7 @@ class TeleItem(models.Model):
     appt = models.CharField(max_length=10)
     name = models.CharField(max_length=30)
     unit = models.CharField(max_length=30)
-    number = models.BigIntegerField()
+    number = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name
